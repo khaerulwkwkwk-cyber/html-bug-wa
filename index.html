@@ -528,3 +528,20 @@ function buyNow(){toPage('payment');}
 </script>
 
 </body></html>
+
+// Pastikan path ke file audio sudah benar, dimulai dari root public directory
+const audioSource = "/lagu.mp3";
+
+const MusicPlayer = () => {
+  return (
+    <div>
+      <h1>My Website with Music</h1>
+      <audio controls>
+        <source src={audioSource} type="audio/mpeg" />
+        Browser Anda tidak mendukung elemen audio.
+      </audio>
+    </div>
+  );
+};
+
+export default MusicPlayer;
